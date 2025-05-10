@@ -69,8 +69,8 @@ def plan_pareto(start: Type, goal: Type) -> List[Tuple[List[str], Cost]]:
   return pareto_solutions
 
 if __name__ == "__main__":
-  goal = "bool"
   start = "int[]"
+  goal = "bool"
   solutions = plan_pareto(start, goal)
 
   print(f"\nPareto-optimal plans to reach {goal} from {start}:")
